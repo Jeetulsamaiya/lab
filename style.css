@@ -184,6 +184,7 @@ body {
     left: 10%;
     height: 50%;
     width: 100%;
+    mix-blend-mode: multiply;
     background-color: rgba(255, 73, 27, 0.808);
     opacity: .8;
 }
@@ -200,7 +201,7 @@ body {
     width: 20px;
     height: 20px;
     background: #ee2b2b;
-    /* background-blend-mode: multiply; */
+    mix-blend-mode: difference;
     position: absolute;
     border-radius: 50%;
 }
