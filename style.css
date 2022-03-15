@@ -163,12 +163,13 @@ body {
 #topright {
     font-size: 1vw;
     position: absolute;
-    margin-top: 12.875em;
-    margin-left: 53.75em;
+    margin-top: 10.875em;
+    margin-left: 54.75em;
     width: 11.25em;
     /* background-color: yellow; */
     transform: translate(-50%, -50%) rotate(90deg);
 }
+
 
 #line {
     font-size: 1vw;
