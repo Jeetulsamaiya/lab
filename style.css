@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "UN bold";
+    src: url(./Fonts/Fontfabric\ -\ UniNeueBold.woff);
+}
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'UN bold';
+    cursor: none;
+
+}
+
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    background-color: #DFDFDF;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+#nav {
+    font-size: 1vw;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 70px; */
+    /* background-color: yellow; */
+    padding: 0.9375em 3.75em;
+    z-index: 9;
+}
+
+#lftnav {
+    width: 14%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#rgtnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+    /* background-color: green; */
+}
+
+#arri {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 23%;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 15%;
+    /* background-color: red; */
+}
+
+#left {
+    position: relative;
+    height: 100vh;
+    width: 33%;
+    /* background-color: cyan; */
+}
+
+#left #lab {
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    transform: translate(-50%, -50%);
+
+}
+
+#left #lab h1 {
+
+    font-weight: 700;
+    font-size: 14.375vw;
+}
+
+#left #text span {
+    position: absolute;
+    margin-bottom: 6.25em;
+    animation: dot 2s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+
+#left>#text>h1 {
+    font-size: 9.375vw;
+    position: absolute;
+    bottom: 0%;
+    left: 26%;
+    font-weight: 700;
+    letter-spacing: -0.09333333333333334em;
+    transform: translate(-50%, -50%)rotate(90deg);
+}
+
+#text {
+    font-size: 1vw;
+    position: relative;
+    height: 100%;
+    margin-left: 1.875em;
+    /* background-color: red */
+}
+
+#right {
+    overflow: hidden;
+    /* position: relative; */
+    height: 100vh;
+    width: 67%;
+    /* background-color: red; */
+
+}
+
+#top {
+    font-size: 1vw;
+    display: flex;
+    /* align-items: flex-end; */
+    position: absolute;
+    top: 15%;
+    border-top: 0.0625em solid transparent;
+    left: 30%;
+}
+
+#top #textone {
+    font-size: 1vw;
+    width: 15.625em;
+    color: grey;
+}
+
+#top #textone p {
+    font-size: 0.625vw;
+    width: 25em;
+    color: grey;
+
+}
+
+#top #texttwo p {
+    font-size: 0.625vw;
+    width: 25em;
+    margin-left: 4em;
+    margin-top: 2em;
+    color: grey;
+
+}
+
+#topright {
+    font-size: 1vw;
+    position: absolute;
+    margin-top: 12.875em;
+    margin-left: 53.75em;
+    width: 11.25em;
+    /* background-color: yellow; */
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+#line {
+    font-size: 1vw;
+    height: 0.0625em;
+    width: 11.25em;
+    border-bottom: .2em solid black;
+}
+
+#bottom {
+    /* background-color: red; */
+    position: relative;
+    top: 18%;
+    left: 40%;
+}
+
+#bottom>img {
+    font-size: 1vw;
+    height: 90vh;
+    margin-right: 18.75em;
+
+}
+
+#red {
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    height: 50%;
+    width: 100%;
+    background-color: rgba(255, 73, 27);
+    mix-blend-mode: multiply;
+    opacity: .8;
+}
+
+
+
+
+#circle {
+    font-size: 1vw;
+    /* font-size: 16px; */
+    width: 2em;
+    height: 2em;
+    background: white;
+    mix-blend-mode: difference;
+    position: absolute;
+    border-radius: 50%;
+    z-index: 99;
+}
+
+button {
+    font-size: 1.25;
+    position: absolute;
+    bottom: 0;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: #ee2b2b;
+    padding: 0.45em 1.35em;
+
+}
+
+@keyframes dot {
+    0% {
+        opacity: 0;
+        transform: translate(-0%, -60%)
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0%, 0%)
+    }
+
+
+}
+
+
+@media (max-width: 500px) {
+    #nav {
+        font-size: 2vw;
+    }
+
+    #lftnav {
+        width: 20%
+    }
+
+
+    #top #textone {
+        font-size: 5vw;
+        width: 5.3em;
+    }
+
+    #top #textone p {
+        font-size: 1.1vw;
+    }
+
+    #top #texttwo p {
+        font-size: 1.1vw;
+        margin-top: 6em;
+    }
+
+    #left {
+        width: 45%
+    }
+
+    #left #lab h1 {
+        font-size: 37vw;
+        margin-left: .46em;
+    }
+
+    #left>#text>h1 {
+        bottom: 5%;
+        font-size: 15vw;
+    }
+
+    #topright {
+        margin-top: 14em;
+        font-size: 1.5vw;
+        margin-left: 32em;
+    }
+
+    #red {
+        left: 47%;
+    }
+
+    #bottom {
+        left: 7%;
+    }
+
+    #bottom>img {
+        height: 85vh;
+    }
+
+    #circle {
+        height: 5em;
+        width: 5em;
+    }
+}
